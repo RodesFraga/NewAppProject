@@ -1,6 +1,6 @@
 
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <title>PreacherApp</title>
@@ -11,8 +11,10 @@
     <h1>Qual é a sua dúvida Bíblica?</h1>
     <form method="post">
         
-        <input type="text" id="question" name="question" value="{{ question }}" placeholder="Envie uma pergunta..." class="texto">
-        <input type="submit" value="Enviar" onsubmit="clearTextarea()">
+        <div class="question-container">
+            <input type="text" id="question" name="question" value="{{ question }}" placeholder="Envie uma pergunta..." class="texto">
+            <input type="submit" value="Enviar" onsubmit="clearTextarea()" class="enviar-button">
+        </div>
     </form>
 
     <div id="respostap">
@@ -29,9 +31,9 @@
         }
         </script>
 </body>
-</html> -->
+</html>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <title>PreacherApp</title>
@@ -59,4 +61,4 @@
         }
     </script>
 </body>
-</html>
+</html> -->

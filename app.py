@@ -121,11 +121,6 @@ def is_bible_related_question(question):
 
     return False
 
-     
-    # Teste da função is_bible_related_question
-print(is_bible_related_question("Quem foi Jesus?"))  # Deve retornar True se a pergunta é relacionada à Bíblia
-print(is_bible_related_question("Qual é a capital do Brasil?"))  # Deve retornar False, não é relacionada à Bíblia
-
 
 
 @app.route('/', methods=['GET', 'POST'])
