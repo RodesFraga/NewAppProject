@@ -23,3 +23,4 @@ A princípio a dificuldade é, por ser a primeira vez com o Python, deixar dispo
 A API_KEY não pode ser usada no deploy, Foi necessário fazer uma cópia do app.py para enviar ao GitHub.
 
 * Ainda estamos estudando como deixaremos disponivel. Talvez tenhamos que fazer o Deploy em outrou servirdor e deixar linkando aqui no README.
+* Mas o app segue com funcionolidade normal em offline.
