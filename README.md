@@ -17,3 +17,9 @@ Depois será realizado a criação de um banco de dados chamado "dados_ps".
 * Dificuldades do projeto
 
 A princípio a dificuldade é, por ser a primeira vez com o Python, deixar disponível a vizualização pelo o http do Github. Estamos estudando e pesquisando e conforme vamos aprendendo as melhorias irão aparecer.
+
+## A API
+
+A API_KEY não pode ser usada no deploy, Foi necessário fazer uma cópia do app.py para enviar ao GitHub.
+
+* Ainda estamos estudando como deixaremos disponivel. Talvez tenhamos que fazer o Deploy em outrou servirdor e deixar linkando aqui no README.
