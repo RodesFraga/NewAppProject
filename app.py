@@ -1,86 +1,4 @@
-# from flask import Flask, render_template, request, jsonify
-# import requests
-# import json
 
-# app = Flask(__name__)
-
-# API_KEY = "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"
-# API_URL = "https://api.openai.com/v1/chat/completions"
-# MODEL_ID = "gpt-3.5-turbo"
-
-# headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-
-# @app.route('/', methods=['GET', 'POST'])
-# def index():
-#     if request.method == 'POST':
-#         user_question = request.form['question']
-#         body = {
-#             "model": MODEL_ID,
-#             "messages": [{"role": "user", "content": user_question}]
-#         }
-
-#         body_json = json.dumps(body)
-#         response = requests.post(API_URL, headers=headers, data=body_json)
-#         response_data = response.json()
-#         answer = response_data["choices"][0]["message"]["content"]
-
-#         return render_template('index.html', question=user_question, answer=answer)
-
-#     return render_template('index.html', question='', answer='')
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
-# import re
-# from flask import Flask, render_template, request, jsonify
-# import requests
-# import json
-
-
-# app = Flask(__name__)
-
-# API_KEY = "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"
-# API_URL = "https://api.openai.com/v1/chat/completions"
-# MODEL_ID = "gpt-3.5-turbo"
-
-# headers = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
-
-# def is_bible_related_question(question):
-#     bible_keywords = ["jesus", "deus", "cristo", "evangelho", "fé", "religião", "espiritualidade", "oração", "sagrada escritura"]
-
-#     for keyword in bible_keywords:
-#         pattern = r'\b' + re.escape(keyword) + r'\b'
-#         if re.search(pattern, question, re.IGNORECASE):
-#             return True
-
-#     return False
-
-# @app.route('/', methods=['GET', 'POST'])
-# def index():
-#     if request.method == 'POST':
-#         user_question = request.form['question']
-
-#         if is_bible_related_question(user_question):
-#             body = {
-#                 "model": MODEL_ID,
-#                 "messages": [{"role": "user", "content": user_question}]
-#             }
-
-#             body_json = json.dumps(body)
-#             response = requests.post(API_URL, headers=headers, data=body_json)
-#             response_data = response.json()
-#             answer = response_data["choices"][0]["message"]["content"]
-#         else:
-#             answer = "Desculpe, só posso responder perguntas relacionadas à Bíblia."
-
-#         return render_template('index.html', question=user_question, answer=answer)
-
-#     return render_template('index.html', question='', answer='')
-
-# if __name__ == '__main__':
-#     app.run(debug=True)
-
-#MODELO DE APRENDIZAGEM
 
 import re
 from flask import Flask, render_template, request, jsonify
@@ -91,7 +9,7 @@ import torch
 
 app = Flask(__name__)
 
-API_KEY = "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"
+API_KEY = ""
 API_URL = "https://api.openai.com/v1/chat/completions"
 MODEL_ID = "gpt-3.5-turbo"
 
